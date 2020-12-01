@@ -1,0 +1,4 @@
+source 'https://art.nwie.net/artifactory/api/gems/gems'
+
+gem 'activesupport'
+gem 'factory_bot'
