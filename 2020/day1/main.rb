@@ -18,7 +18,5 @@ def find_solution(input, target = 2020, numbers = 2)
   min * multiplicand
 end
 
-# puts find_2_num_solution(input.clone, 2020)
-# puts find_2_num_solution(input.clone, 2020)
 puts find_solution(input.clone, 2020, 2)
 puts find_solution(input.clone, 2020, 3)

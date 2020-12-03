@@ -8,19 +8,7 @@ end
 
 def valid_password_tobogan?(password_rule)
   match, first_position, second_position, letter, password = password_rule.match(/(\d+)-(\d+) ([a-z]): ([a-z]+)/).to_a
-  if password[first_position.to_i - 1] == letter
-    if password[second_position.to_i - 1] == letter
-      return false
-    else
-      return true
-    end
-  else
-    if password[second_position.to_i - 1] == letter
-      return true
-    else
-      return false
-    end
-  end
+  return (password[first_position.to_i - 1] == letter) ^ (password[second_position.to_i - 1] == letter)
 end
 
 valid_count_sled = 0
