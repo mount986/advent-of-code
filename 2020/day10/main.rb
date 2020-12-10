@@ -1,5 +1,3 @@
-require_relative 'integer'
-
 adapters = File.readlines('input.dat').map{|jolt| jolt.to_i}
 
 def double_fib(num)
