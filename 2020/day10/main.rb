@@ -1,10 +1,10 @@
 adapters = File.readlines('input.dat').map{|jolt| jolt.to_i}
 
-def double_fib(num)
+def fib3(num)
   return 0 if num < 1
   return 1 if num == 1 or num == 2
 
-  return double_fib(num - 1) + double_fib(num - 2) + double_fib(num - 3)
+  return fib3(num - 1) + fib3(num - 2) + fib3(num - 3)
 end
 
 adapters.unshift(0)
@@ -23,7 +23,7 @@ diff_3_count = 0
     consecutive += 1
   when 3
     diff_3_count += 1
-    permutations = permutations * double_fib(consecutive)
+    permutations = permutations * fib3(consecutive)
     consecutive = 1
   end
 end
