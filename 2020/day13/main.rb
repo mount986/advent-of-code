@@ -1,7 +1,7 @@
 require_relative 'bus'
 
-current_time, buses_list = File.readlines('input.dat', chomp: true)
-# current_time, buses_list = File.readlines('test.dat', chomp: true)
+# current_time, buses_list = File.readlines('input.dat', chomp: true)
+current_time, buses_list = File.readlines('test.dat', chomp: true)
 
 current_time = current_time.to_i
 buses = Array.new
